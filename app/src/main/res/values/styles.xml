@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    this is a bar section design -->
+    <style name="Theme.Greeting.BackgroundActivity" parent="Theme.AppCompat.DayNight">
+        <!-- Customize this theme as needed -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/cardview_dark_background</item>
+        <item name="colorAccent">@color/purple_200</item>
+        <item name="colorControlActivated">#00FF00</item> <!-- Focused bar color -->
+    </style>
+</resources>

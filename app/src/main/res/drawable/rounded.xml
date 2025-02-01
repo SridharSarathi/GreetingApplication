@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ExtraText">
+    tools:radius="15dp"
+    android:bottomLeftRadius="7dp"
+    android:bottomRightRadius="7dp"
+    android:topLeftRadius="7dp"
+    android:topRightRadius="7dp
+
+</resources>

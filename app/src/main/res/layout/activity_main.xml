@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFEFA"
+    >
+<EditText
+    android:id="@+id/inputtext"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:width="200dp"
+    android:hint="text here"
+    app:backgroundTint="@color/black"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/heading"
+    app:layout_constraintBottom_toTopOf="@id/submit"
+    />
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Welcome to Android"
+        android:textColor="@color/neongreen"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Sumbit"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="100dp"
+        android:background="@color/skyblue"
+        app:layout_constraintEnd_toEndOf="@id/inputtext"
+        app:layout_constraintStart_toStartOf="@id/inputtext"
+        app:layout_constraintTop_toTopOf="@id/inputtext"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Navigations"
+        android:background="#FF00FF"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintStart_toStartOf="@id/androidbasics"
+        app:layout_constraintEnd_toEndOf="@id/androidbasics"
+        app:layout_constraintTop_toBottomOf="@id/androidbasics"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/androidbasics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Android Basics "
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="100dp"
+        android:background="@color/purple_200"
+        app:layout_constraintStart_toStartOf="@id/Colors"
+        app:layout_constraintTop_toBottomOf="@id/Colors"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/Colors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:text="Colors"
+        android:background="#00FF00"
+        app:layout_constraintEnd_toEndOf="@id/heading"
+        app:layout_constraintStart_toStartOf="@id/heading"
+        app:layout_constraintTop_toBottomOf="@id/submit"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

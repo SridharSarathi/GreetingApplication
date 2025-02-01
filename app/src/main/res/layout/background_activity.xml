@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/backgrounlayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#d5841c"
+        android:text="back"
+       android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/titname"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/black" />
+
+    <Button
+        android:id="@+id/redbuton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="#FF0000"
+        android:text="Red"
+        android:width="110dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titname"
+        android:layout_marginTop="25dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/blue"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/skyblue"
+        android:width="110dp"
+        android:textSize="20sp"
+        android:text="BLue"
+        android:background="#0941fc"
+
+
+        />
+
+    <Button
+        android:id="@+id/green"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/yellow"
+        android:width="110dp"
+        android:textSize="20sp"
+        android:text="Green"
+        android:background="#2cb505"
+
+        />
+
+    <Button
+        android:id="@+id/skyblue"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/green"
+        android:width="110dp"
+        android:textSize="20sp"
+        android:text="SkyBlue"
+        android:background="#0eedf8"
+
+        />
+
+    <Button
+        android:id="@+id/pink"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/blue"
+        android:width="110dp"
+        android:textSize="20sp"
+        android:text="pink"
+        android:background="#e919f3"
+
+        />
+
+    <Button
+        android:id="@+id/yellow"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/redbuton"
+        android:width="110dp"
+        android:textSize="20sp"
+        android:text="Yellow"
+
+        android:background="#FFFF00"
+
+        />
+    <Button
+        android:id="@+id/orange"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pink"
+        android:width="110dp"
+        android:textSize="20sp"
+        android:text="orange"
+        android:background="#ffa500"
+
+        />
+
+    <Button
+        android:id="@+id/white"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/orange"
+        android:width="110dp"
+        android:textSize="20sp"
+        android:text="white"
+        android:textColor="@color/black"
+        android:background="#FFFFFF"
+
+        />
+    <Button
+        android:id="@+id/black"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/white"
+        android:width="110dp"
+        android:textSize="20sp"
+        android:text="black"
+        android:textColor="@color/white"
+        android:background="#000000"
+
+        />
+
+    <TextView
+        android:id="@+id/titname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:text="BACKGROUND"
+        android:textSize="25dp"
+       android:textColor="@color/black"
+        android:textStyle="bold"
+
+           />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
