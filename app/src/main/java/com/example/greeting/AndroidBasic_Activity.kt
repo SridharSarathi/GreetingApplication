@@ -3,26 +3,38 @@ import android.os.Bundle
 import android.widget.Toast
 import android.content.Intent
 import android.net.Uri
+import android.util.Log
 import android.widget.Button
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.material3.AlertDialog
+import com.example.greeting.databinding.AndroidbasicsBinding
+import kotlin.math.log
 
 class AndroidBasic_Activity:ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        var intent:Intent
         setContentView(R.layout.androidbasics)
+        var intent:Intent
+        var frag=findViewById<Button>(R.id.fragements)
+
         var alert=findViewById<Button>(R.id.alert)
         var explictbtn=findViewById<Button>(R.id.explict)
         var sendmail=findViewById<Button>(R.id.sendmail)
         var implictbtn=findViewById<Button>(R.id.implict)
-
+//        var binds=AndroidbasicsBinding.inflate(layoutInflater)
+        var config=findViewById<Button>(R.id.configbtn)
         println("onCreate() Screen visible")
         Toast.makeText(this, "Life Cycle is Running ", Toast.LENGTH_LONG).show()
-
+        config.setOnClickListener()
+        {
+            Log.d("Testing","Entered")
+            var intent=Intent(this,ConfigurationChanges::class.java)
+            startActivity(intent)
+//            Toast.makeText(AndroidBasic_Activity,"Clicked",Toast.LENGTH_LONG).show()
+        }
         sendmail.setOnClickListener()
         {
             intent=Intent(Intent.ACTION_SEND).apply {
@@ -55,6 +67,13 @@ class AndroidBasic_Activity:ComponentActivity() {
 //            startActivity(webIntent)
 
         }
+        frag.setOnClickListener {
+            var intent=Intent(this,Fragements_Activity::class.java)
+            startActivity(intent)
+        }
+
+
+
 
 
     }

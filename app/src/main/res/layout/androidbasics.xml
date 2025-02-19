@@ -1,86 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/white"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:background="@color/white">
+
     <Button
+
         android:id="@+id/lifecyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Life Cycle"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="50dp"
+        android:layout_width="150dp"
+        android:layout_height="79dp"
+
         android:layout_marginTop="50dp"
-        app:layout_constraintTop_toTopOf="@id/basics"
+        android:background="@drawable/buttons"
+        android:text="Life Cycle"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/basics" />
+
+    <Button
+        android:id="@+id/configbtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/buttons"
+        android:text="configurations"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="@+id/alert"
+        app:layout_constraintTop_toBottomOf="@id/alert"
 
         />
     <Button
-        android:id="@+id/alert"
-        android:layout_width="wrap_content"
+        android:id="@+id/bcr"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
+
+        android:background="@drawable/buttons"
+        android:text="Broadcast"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/alert"
+        app:layout_constraintTop_toBottomOf="@id/configbtn"
+
+        />
+
+    <Button
+        android:id="@+id/alert"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
         android:text="Alert Dialoge"
-        app:layout_constraintStart_toStartOf="@id/sendmail"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
 
         app:layout_constraintEnd_toEndOf="@id/sendmail"
+        app:layout_constraintStart_toStartOf="@id/sendmail"
         app:layout_constraintTop_toBottomOf="@id/sendmail"
 
         />
 
     <Button
         android:id="@+id/explict"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
         android:text="Explicit \n Intent"
-        app:layout_constraintStart_toStartOf="@id/lifecyle"
+
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/lifecyle"
+        app:layout_constraintStart_toStartOf="@id/lifecyle"
         app:layout_constraintTop_toBottomOf="@id/intentstittle"
 
         />
+
     <Button
         android:id="@+id/sendmail"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttons"
         android:text="SEND MAIL"
-        app:layout_constraintStart_toStartOf="@id/lifecyle"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/lifecyle"
-        app:layout_constraintTop_toBottomOf="@id/implict"
-/>
+        app:layout_constraintStart_toStartOf="@id/lifecyle"
+        app:layout_constraintTop_toBottomOf="@id/implict" />
+
     <Button
         android:id="@+id/implict"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
         android:text="implicit \n Intent"
-        app:layout_constraintStart_toStartOf="@id/lifecyle"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/lifecyle"
+        app:layout_constraintStart_toStartOf="@id/lifecyle"
         app:layout_constraintTop_toBottomOf="@id/explict"
 
         />
 
+    <Button
+        android:layout_width="150dp"
+        android:id="@+id/fragements"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:text="fragements"
+            android:textColor="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="@+id/bcr"
+        app:layout_constraintStart_toStartOf="@+id/bcr"
+        app:layout_constraintTop_toBottomOf="@+id/bcr" />
+
     <TextView
         android:id="@+id/basics"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Andoid Basics"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
         android:textColor="@color/black"
         android:textSize="20dp"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
     <TextView
         android:id="@+id/intentstittle"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
         android:text="Intents"
         android:textColor="@color/neongreen"
-        android:layout_marginTop="10dp"
-        app:layout_constraintTop_toBottomOf="@id/lifecyle"
-        app:layout_constraintStart_toStartOf="@id/lifecyle"
         app:layout_constraintEnd_toEndOf="@id/lifecyle"
-        />
+        app:layout_constraintStart_toStartOf="@id/lifecyle"
+        app:layout_constraintTop_toBottomOf="@id/lifecyle" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

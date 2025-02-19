@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.greeting"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.greeting"
@@ -38,6 +38,7 @@ android {
     }
     buildFeatures {
         compose = true
+        viewBinding=true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
@@ -58,6 +59,15 @@ dependencies {
     implementation(libs.androidx.ui)
 //    implementation (androidx.constraintlayout:constraintlayout:2.1.2)
     implementation("androidx.constraintlayout:constraintlayout:2.2.0")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:okhttp:4.9.0")
+    //coroutines
+//    implementation("org.jetbrains.kotlinx:kotlinx-corounties-core:1.7.3")
+//    implementation("org.jetbrains.kotlinx:kotlinx-corounties-android:1.7.3")
+
+//    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3"
+
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)

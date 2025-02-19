@@ -7,6 +7,15 @@
     android:orientation="vertical"
     android:background="#FFFEFA"
     >
+    <Button
+        android:id="@+id/news"
+        app:layout_constraintStart_toStartOf="@id/navigation"
+        app:layout_constraintEnd_toEndOf="@id/navigation"
+        app:layout_constraintTop_toBottomOf="@id/navigation"
+        android:layout_width="200dp"
+        android:background="@android:color/holo_red_light"
+        android:layout_height="wrap_content"
+        android:text="TODO"/>
 <EditText
     android:id="@+id/inputtext"
     android:layout_height="wrap_content"
@@ -48,34 +57,28 @@
         tools:ignore="MissingConstraints" />
     <Button
         android:id="@+id/navigation"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Navigations"
         android:background="#FF00FF"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="100dp"
         app:layout_constraintStart_toStartOf="@id/androidbasics"
         app:layout_constraintEnd_toEndOf="@id/androidbasics"
         app:layout_constraintTop_toBottomOf="@id/androidbasics"
         tools:ignore="MissingConstraints" />
     <Button
         android:id="@+id/androidbasics"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text=" Android Basics "
-        android:layout_marginEnd="100dp"
-        android:layout_marginStart="100dp"
         android:background="@color/purple_200"
         app:layout_constraintStart_toStartOf="@id/Colors"
         app:layout_constraintTop_toBottomOf="@id/Colors"
         tools:ignore="MissingConstraints" />
     <Button
         android:id="@+id/Colors"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="100dp"
         android:text="Colors"
         android:background="#00FF00"
         app:layout_constraintEnd_toEndOf="@id/heading"
